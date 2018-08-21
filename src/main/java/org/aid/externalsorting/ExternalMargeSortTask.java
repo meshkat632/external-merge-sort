@@ -131,6 +131,7 @@ public class ExternalMargeSortTask<T> {
 
 		while (inputfiles.size() > 0) {
 			File newFile = new File(workFolder.getPath() + "/" + UUID.randomUUID().toString() + ".txt");
+			System.out.println("bla");
 			newFile.createNewFile();
 			Set<File> filesToProcess = takeFiles(inputfiles, chunkSize);
 
